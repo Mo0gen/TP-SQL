@@ -26,9 +26,9 @@
 -- 4 Meuleuses 125mm
 -- 1 Perceuse à colonne
 
-INSERT INTO fournisseur (id,nom) VALUES (1,"Française d'imports");
-INSERT INTO fournisseur (id,nom) VALUES (2,"FDM SA");
-INSERT INTO fournisseur (id,nom) VALUES (3,"Dubois & Fils");
+INSERT INTO fournisseur (id,nom) VALUES (1,'Française d''imports');
+INSERT INTO fournisseur (id,nom) VALUES (2,'FDM SA');
+INSERT INTO fournisseur (id,nom) VALUES (3,'Dubois & Fils');
 
 INSERT INTO article (id, REF, designation, prix, ID_FOU) VALUES (1, 'A01', 'Perceuse P1', 74.99, 1);
 INSERT INTO article (id, REF, designation, prix, ID_FOU) VALUES (2, 'F01', 'Boulon laiton 4 x 40 mm (sachet de 10)', 2.25, 2);
@@ -43,9 +43,9 @@ INSERT INTO article (id, REF, designation, prix, ID_FOU) VALUES (10, 'F04', 'Fra
 
 INSERT INTO BON (id,Numero, Date_CMDE, Delai, ID_FOU) VALUES (1, 1, '2025/10/23',3, 1);
 
-INSERT INTO COMPO (id_ART, QTE) VALUES (1,3);
-INSERT INTO COMPO (id_ART, QTE) VALUES (5,4);
-INSERT INTO COMPO (id_ART, QTE) VALUES (7,1);
+INSERT INTO COMPO (id_ART, QTE, id_bon) VALUES (1,3,1);
+INSERT INTO COMPO (id_ART, QTE, id_bon) VALUES (5,4,1);
+INSERT INTO COMPO (id_ART, QTE, id_bon) VALUES (7,1,1);
 
 
 
